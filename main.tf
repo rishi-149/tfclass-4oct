@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "my-s3-bucket-${terraform workspace}"
+  bucket = "my-s3-bucket-${terraform.workspace}"
   acl = "private"
 
   tags = {
